@@ -2,10 +2,10 @@ package org.example.model;
 
 public class book {
 
-    private  String title;
-    private  int quantity;
-    private  int book_id;
-    private  String author;
+    private  static String title;
+    private  static int quantity;
+    private  static int book_id;
+    private  static String author;
 
     //constructor
     public book(String title,String author, int quantity){
@@ -15,19 +15,19 @@ public class book {
     }
     
     //getters
-    public String getTitle() {
+    public static String getTitle() {
         return title;
     }
 
-    public  int getQuantity() {
+    public static int getQuantity() {
         return quantity;
     }
 
-    public  int getBook_id() {
+    public static int getBook_id() {
         return book_id;
     }
 
-    public  String getAuthor() {
+    public static String getAuthor() {
         return author;
     }
 }
